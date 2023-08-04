@@ -1,6 +1,6 @@
 # hono-swagger-jsdoc
 
-hono-swagger-jsdoc is a Swagger generator for Hono. It exposes two functions that act as middleware for your Hono application:
+hono-swagger-jsdoc is a Swagger generator for [Hono](https://hono.dev). It exposes two functions that act as middleware for your Hono application:
 
     honoSwaggerJsdoc
     honoSwaggerUI
@@ -31,7 +31,7 @@ app.get(
 );
 ```
 
-The input to honoSwaggerJsdoc is the options for swagger-jsdoc. You can learn more about these options here.
+The input to honoSwaggerJsdoc is the options for swagger-jsdoc. You can learn more about these options [here](https://github.com/Surnet/swagger-jsdoc#readme).
 
 ## honoSwaggerUI
 
@@ -52,6 +52,6 @@ app.get(
 ```
 ## FAQ
 
-Why are the two middleware separate? Should we just use a single middleware to generate both the spec and the UI?
+**Why are the two middleware separate? Should we just use a single middleware to generate both the spec and the UI?**
 
 The two middleware are kept separate to allow for the setup of multiple Swagger JSON files. For instance, if you have multiple versions of your API available (e.g., /api/v1, /api/v2), coding them into a single middleware would be more difficult.
