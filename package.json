@@ -1,0 +1,19 @@
+{
+  "name": "hono-swagger-jsdoc",
+  "version": "0.0.1",
+  "description": "A hono swagger middleware build around swagger-jsdoc",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hono": "^3.3.4",
+    "swagger-jsdoc": "^6.2.8"
+  },
+  "devDependencies": {        
+    "@types/swagger-jsdoc": "^6.0.1",
+    "typescript": "^5.1.6"
+  }
+}
