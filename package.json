@@ -16,5 +16,9 @@
   "devDependencies": {
     "@types/swagger-jsdoc": "^6.0.1",
     "typescript": "^5.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vlaem/hono-swagger-json.git"
   }
 }
