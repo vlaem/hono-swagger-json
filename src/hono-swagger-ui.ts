@@ -1,8 +1,7 @@
 import { MiddlewareHandler } from 'hono'
 import { html, raw } from 'hono/html'
 
-interface HonoSwaggerUiOptions {
-  route: string
+interface HonoSwaggerUiOptions {  
   urls: { url: string; name: string }[]
 }
 
