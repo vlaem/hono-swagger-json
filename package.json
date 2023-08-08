@@ -1,20 +1,32 @@
 {
   "name": "hono-swagger-jsdoc",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A hono swagger middleware build around swagger-jsdoc",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    "require": {
+      "types": "./lib/index.d.cts",
+      "default": "./lib/index.cjs"
+    },
+    "import": {
+      "types": "./lib/index.d.mts",
+      "default": "./lib/index.mjs"
+    }
+  },
   "scripts": {
-    "build": "tsc"
+    "build": "pkgroll --dist lib"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/swagger-jsdoc": "^6.0.1",
     "hono": "^3.3.4",
     "swagger-jsdoc": "^6.2.8"
   },
   "devDependencies": {
-    "@types/swagger-jsdoc": "^6.0.1",
+    "pkgroll": "^1.11.0",
     "typescript": "^5.1.6"
   },
   "repository": {
